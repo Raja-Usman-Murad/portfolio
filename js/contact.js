@@ -42,12 +42,12 @@
 $(document).ready(function () {
   (function ($) {
     const contactForm = document.querySelector("#contactForm");
-    let name = document.querySelector("#name").value;
-    let email = document.querySelector("#email").value;
-    let subject = document.querySelector("#subject").value;
-    let message = document.querySelector("#message").value;
     $(contactForm).submit(async (e) => {
       e.preventDefault();
+      let name = document.querySelector("#name").value;
+      let email = document.querySelector("#email").value;
+      let subject = document.querySelector("#subject").value;
+      let message = document.querySelector("#message").value;
       let formObj = {
         name,
         email,
